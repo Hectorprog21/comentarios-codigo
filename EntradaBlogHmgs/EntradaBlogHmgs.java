@@ -16,7 +16,7 @@ package EntradaBlogHmgs;
         private String texto;
         private String autor;
 
-        /*Constructor de la clase. recibe el número de entrada, el nombre del autor
+        /**Constructor de la clase. recibe el número de entrada, el nombre del autor
         de la entrada y el texto que contiene la entrada. Si el número de entrada
         es negativo, lanza una excepción.*/
 
@@ -35,27 +35,27 @@ package EntradaBlogHmgs;
             return cad;
         }
 
-        /*Devuelve el número de la entrada*/
+        /**Devuelve el número de la entrada*/
         public int getId() {
             return this.id;
         }
 
-        /*devuelve el texto completo de la entrada*/
+        /**devuelve el texto completo de la entrada*/
         public String getTexto() {
             return this.texto;
         }
 
-        /*devuelve el nombre del autor de la entrada en mayúsculas*/
+        /**devuelve el nombre del autor de la entrada en mayúsculas*/
         public String getAutor() {
             return this.autor.toUpperCase();
         }
 
-        //devuelve el nombre del autor. Ya no se usa. Mejor ver getAutor
+        /**devuelve el nombre del autor. Ya no se usa. Mejor ver getAutor*/
         public String devuelveAutor() {
             return this.autor;
         }
 
-        /*No tiene porqué tener argumentos.*/
+        /**No tiene porqué tener argumentos.*/
         public static void main(String[] args) {
             /*   Se ha Modificado*/
             EntradaBlogHmgs e1 = new EntradaBlogHmgs(3, "ana", "Últimas noticias, está disponible BixBy 2.0");
